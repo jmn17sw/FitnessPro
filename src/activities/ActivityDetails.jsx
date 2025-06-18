@@ -1,8 +1,7 @@
 import { useNavigate, useParams } from "react-router"
 import useMutation from "../api/useMutation"
 import useQuery from "../api/useQuery";
-import { useAuth } from "../api/AuthContext"
-
+import { useAuth } from "../auth/AuthContext"
 export default function ActivityDetails() {
   const { id } = useParams();
   const { token } = useAuth();
